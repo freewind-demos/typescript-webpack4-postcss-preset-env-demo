@@ -1,13 +1,9 @@
-Webpack Config File Demo
-========================
+Webpack Config File in TypeScript Demo
+======================================
 
-Put all settings in `webpack.config.js`
+Use typescript to write webpack config file.
 
 ```
 npm install
 npm run demo
 ```
-
-Then open `index.html` in your browser.
-
-![demo](./images/demo.jpg)
