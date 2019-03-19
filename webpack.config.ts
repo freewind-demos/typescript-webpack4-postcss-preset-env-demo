@@ -10,10 +10,10 @@ const config: Configuration = {
   },
   module: {
     rules: [{
-      test: /\.css$/,
+      test: /\.pcss$/,
       use: [
         {loader: 'style-loader'},
-        {loader: 'css-loader'}
+        {loader: 'pcss-loader'}
       ]
     }, {
       test: /\.tsx?$/,

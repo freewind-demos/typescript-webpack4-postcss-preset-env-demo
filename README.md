@@ -1,7 +1,5 @@
-Webpack Config File in TypeScript Demo
+Webpack Config "postcss-loader" Demo
 ======================================
-
-Use typescript to write webpack config file.
 
 ```
 npm install
