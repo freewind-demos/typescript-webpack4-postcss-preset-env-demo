@@ -12,13 +12,12 @@ const config: Configuration = {
     rules: [{
       test: /\.pcss$/,
       use: [
-        {loader: 'style-loader'},
-        {loader: 'pcss-loader'}
+        'style-loader',
+        'postcss-loader'
       ]
     }, {
       test: /\.tsx?$/,
-      loader: 'ts-loader',
-      exclude: /node_modules/
+      loader: 'ts-loader'
     }]
   },
   plugins: [
