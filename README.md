@@ -1,18 +1,21 @@
 Webpack4 Config "postcss-preset-env" Demo
 ======================================
 
-有错误, nest css不能解析：
+注意，虽然postcss-preset-env引入了很多插件，但并不是完全启用它们的功能。
 
-![image](./images/error.png)
+通过`stage`参数（可以理解为“成熟度”，数字越大越成熟）控制，默认为`2`，但nesting相关功能为`1`
 
-我专门试了nesting plugin，可以正常处理：
-https://github.com/freewind-demos/typescript-webpack4-postcss-loader-nesting-plugin-demo
+所以为了使用本demo正常工作，需要手动设置：
 
-我觉得这里有问题可能的原因是，在这里使用的是webpack/postcss-loader旧版本，
-1. postcss-preset-env本身与它们不能正常工作
-2. postcss-preset-env中包含的某个插件与它们不能正常工作
+```
+postcssPresetEnv({stage: 1})
+```
 
-先不管了
+或
+
+```
+postcssPresetEnv({features: {'nesting-rules': true}})
+```
 
 ```
 npm install

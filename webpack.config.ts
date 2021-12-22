@@ -20,7 +20,7 @@ const config: Configuration = {
           options: {
             postcssOptions: {
               plugins: [
-                postcssPresetEnv()
+                postcssPresetEnv({stage:1})
                 // 'postcssPresetEnv'
                 // ['postcssPresetEnv']
               ]
