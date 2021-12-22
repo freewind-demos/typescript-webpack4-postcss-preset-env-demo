@@ -1,5 +1,6 @@
 import {Configuration} from 'webpack';
 import HtmlWebpackPlugin = require("html-webpack-plugin");
+import postcssPresetEnv from 'postcss-preset-env';
 
 const config: Configuration = {
   mode: "development",
@@ -19,7 +20,9 @@ const config: Configuration = {
           options: {
             postcssOptions: {
               plugins: [
-                ['postcss-preset-env']
+                postcssPresetEnv()
+                // 'postcssPresetEnv'
+                // ['postcssPresetEnv']
               ]
             }
           }
